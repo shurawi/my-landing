@@ -1,16 +1,7 @@
 .head {
-	padding: 60px 85px 125px;
+	padding: 60px 85px 370px;
 	position: relative;
-	
-	&::after {
-		content: "";
-		width: 1900px;
-		height: 456px;
-		position: absolute;		
-		top: 750px;
-		left: 0px;
-		background: url('../img/yellow-line-bg.png') no-repeat;		
-	}
+	background: url('../img/yellow-line-bg.png') 0 100% no-repeat;	
 }
 
 .head__nav {	
