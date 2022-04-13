@@ -57,6 +57,14 @@ body {
 }
 
 @font-face {
+	font-family: "CenturyGothic-Regular";
+	font-weight: bold;
+	font-style: bold;
+	font-display: swap;
+	src: url("../fonts/CenturyGothic.woff") format("woff"), url("../fonts/CenturyGothic.woff2") format("woff2");
+}
+
+@font-face {
 	font-family: "CenturyGothic-Bold";
 	font-weight: bold;
 	font-style: bold;
