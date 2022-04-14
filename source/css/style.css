@@ -51,7 +51,7 @@ ul li {
 }
 
 body {
-  max-width: 1900px;
+  max-width: 1920px;
   margin: 0 auto;
   color: #ffffff;
   background: url("../img/main-bg.png") repeat-y;
@@ -143,9 +143,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 85px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  padding: 0 200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .services__cont {
@@ -164,6 +165,7 @@ body {
 }
 
 .services__list {
+  width: 450px;
   padding: 75px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,10 +194,10 @@ body {
 .galery::after {
   content: "";
   width: 100%;
-  height: 305px;
+  height: 220px;
   position: absolute;
   top: 0;
-  background: url("../img/yellow-line-bg.png");
+  background: url("../img/yellow-line-bg.png") no-repeat;
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
 }
@@ -206,9 +208,9 @@ body {
 }
 
 .galery__text {
-  width: 400px;
-  margin: 0 9% 0 auto;
-  padding: 280px 0 130px;
+  width: 450px;
+  margin: 0 122px 0 auto;
+  padding: 140px 0 130px;
 }
 
 .galery__title {
@@ -222,7 +224,7 @@ body {
 }
 
 .galery__container {
-  margin-bottom: 60px;
+  margin-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,19 +244,148 @@ body {
 }
 
 .garely__control {
-  margin-top: 60px;
+  margin-top: 100px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
 .galery__btn {
-  width: 25px;
-  height: 25px;
-  margin-right: 20px;
+  width: 35px;
+  height: 35px;
+  margin-right: 60px;
   font-size: 0;
   line-height: 0;
   border-radius: 50%;
   background-color: #f5d31f;
   outline: none;
+}
+
+.galery__btn:last-child {
+  margin-right: 0;
+}
+
+.contacts {
+  position: relative;
+  font-family: "CenturyGothic-Regular";
+}
+
+.contacts::after {
+  content: "";
+  width: 100%;
+  height: 220px;
+  position: absolute;
+  top: 0;
+  background: url("../img/yellow-line-bg.png") no-repeat;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.contacts__wrap {
+  padding: 360px 85px 0;
+}
+
+.contacts__title {
+  width: 500px;
+  margin: 0 220px 0 auto;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: "CenturyGothic-Bold";
+}
+
+.contacts__container {
+  margin: 100px 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts__para {
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.contacts__text {
+  width: 500px;
+}
+
+.contacts__headline {
+  font-size: 25px;
+  line-height: 35px;
+}
+
+.contacts__data {
+  font-size: 25px;
+  line-height: 35px;
+}
+
+.contacts__list {
+  margin-top: 100px;
+}
+
+.contacts__item {
+  margin-bottom: 40px;
+  padding-left: 70px;
+}
+
+.contacts__form {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts__input {
+  margin-bottom: 40px;
+  padding: 10px;
+  font-size: 25px;
+  line-height: 35px;
+  font-family: "CenturyGothic-Regular";
+  border-radius: 3px;
+}
+
+.contacts__input::-webkit-input-placeholder {
+  font-size: 25px;
+  line-height: 35px;
+  font-family: "CenturyGothic-Regular";
+}
+
+.contacts__input:-ms-input-placeholder {
+  font-size: 25px;
+  line-height: 35px;
+  font-family: "CenturyGothic-Regular";
+}
+
+.contacts__input::-ms-input-placeholder {
+  font-size: 25px;
+  line-height: 35px;
+  font-family: "CenturyGothic-Regular";
+}
+
+.contacts__input::placeholder {
+  font-size: 25px;
+  line-height: 35px;
+  font-family: "CenturyGothic-Regular";
+}
+
+.contacts__input--textarea {
+  resize: none;
+}
+
+.contacts__btn {
+  width: 250px;
+  padding: 10px;
+  font-size: 25px;
+  line-height: 35px;
+  font-family: "CenturyGothic-Bold";
+  text-align: left;
+  background-color: #f5d31f;
+  border-radius: 3px;
 }

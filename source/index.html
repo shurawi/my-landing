@@ -116,32 +116,38 @@
 			</div>
 		</section>
 		<section class="contacts">
-			<h2 class="contacts__title">Заказать можно здесь</h2>
-			<div class="contacts__text">
-				<p class="contacts__para">Для связи со мной ты можешь использовать любой источник - номер, почту или адрес.</p>
-				<p class="contacts__para">Не стесняйся - заказывай сайт.</p>
-				<ul class="contacts__list">
-					<li class="contacts__item">
-						<h3 class="contacts__headline">Phone</h3>
-						<p class="contacts__data">8-913-xxx-xx-xx</p>
-					</li>
-					<li class="contacts__item">
-						<h3 class="contacts__headline">E-mail</h3>
-						<p class="contacts__data">toropov@bk.com</p>
-					</li>
-					<li class="contacts__item">
-						<h3 class="contacts__headline">Address</h3>
-						<p class="contacts__data">20, Bordeshi, Amin Bazar Savar, Dhaka</p>
-					</li>
-				</ul>
+			<div class="contacts__wrap">
+				<h2 class="contacts__title">Заказать можно здесь</h2>
+				<div class="contacts__container">
+					<div class="contacts__text">
+						<p class="contacts__para">Для связи со мной ты можешь использовать любой источник - номер, почту или адрес.
+						</p>
+						<p class="contacts__para">Не стесняйся - заказывай сайт.</p>
+						<ul class="contacts__list">
+							<li class="contacts__item">
+								<h3 class="contacts__headline">Phone</h3>
+								<p class="contacts__data">8-913-xxx-xx-xx</p>
+							</li>
+							<li class="contacts__item">
+								<h3 class="contacts__headline">E-mail</h3>
+								<p class="contacts__data">someemail@some.domain</p>
+							</li>
+							<li class="contacts__item">
+								<h3 class="contacts__headline">Address</h3>
+								<p class="contacts__data">20, Bordeshi, Amin Bazar Savar, Dhaka</p>
+							</li>
+						</ul>
+					</div>
+					<form class="contacts__form" action="">
+						<input class="contacts__input" type="text" placeholder="Твое имя" name="name">
+						<input class="contacts__input" type="email" placeholder="Твоя почта" name="email">
+						<input class="contacts__input" type="text" placeholder="Тема обращения" name="topic">
+						<textarea class="contacts__input contacts__input--textarea" name="" id="" cols="30" rows="10"
+							placeholder="Подробно опиши вопрос" name="text"></textarea>
+						<button class="contacts__btn" type="button">Отправить</button>
+					</form>
+				</div>
 			</div>
-			<form class="contacts__form" action="">
-				<input type="text" placeholder="Твое имя">
-				<input type="text" placeholder="Твоя почта">
-				<input type="text" placeholder="Тема обращения">
-				<textarea name="" id="" cols="30" rows="10" placeholder="Подробно опиши вопрос"></textarea>
-				<button type="button">Отправить</button>
-			</form>
 		</section>
 	</main>
 </body>
