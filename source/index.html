@@ -11,10 +11,16 @@
 
 <body>
 	<header class="head">
-		<nav class="head__nav">
+		<nav class="head__nav head__nav--logo">
 			<a class="head__logo" href="#">
-				<img src="img/logo.png" alt="" width="400" height="29">
+				<picture>
+					<source srcset="img/logo-desktop.png" media="(min-width: 1920px)">
+					<img src="img/logo-mobile.png" alt="" width="240" height="17">
+				</picture>
 			</a>
+			<button class="head__burger"></button>
+		</nav>
+		<nav class="head__nav head__nav--open head__nav--close">
 			<ul class="head__list">
 				<li class="head__item">
 					<a href="" class="head__link">Услуги</a>
@@ -30,8 +36,10 @@
 				</li>
 			</ul>
 		</nav>
-		<h1 class="head__title">Пилю WEB<br> для вас<br> за ваши деньги</h1>
-		<a href="" class="head__btn">ЗАКАЗАТЬ</a>
+		<div class="head__text">
+			<h1 class="head__title">Пилю WEB<br> для вас<br> за ваши деньги</h1>
+			<a href="" class="head__btn">ЗАКАЗАТЬ</a>
+		</div>
 	</header>
 	<main>
 		<section class="services">

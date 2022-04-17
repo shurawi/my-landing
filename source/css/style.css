@@ -51,10 +51,16 @@ ul li {
 }
 
 body {
-  max-width: 1920px;
+  min-width: 320px;
   margin: 0 auto;
   color: #ffffff;
   background: url("../img/main-bg.png") repeat-y;
+}
+
+@media (min-width: 1920px) {
+  body {
+    max-width: 1920px;
+  }
 }
 
 @font-face {
@@ -74,69 +80,177 @@ body {
 }
 
 .head {
-  padding: 60px 85px 370px;
-  position: relative;
-  background: url("../img/yellow-line-bg.png") 0 100% no-repeat;
+  height: 370px;
+  padding: 25px 5%;
+  background: url("../img/photo-bg-mobile.png") 90% 100% no-repeat, url("../img/yellow-line-bg-mobile.png") 63% 95% no-repeat;
+}
+
+@media (min-width: 1920px) {
+  .head {
+    padding: 60px 85px 370px;
+    background: url("../img/yellow-line-bg.png") 0 100% no-repeat;
+  }
 }
 
 .head__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.head__nav--open {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.head__nav--close {
+  display: none;
+}
+
+.head__nav--logo {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+@media (min-width: 1920px) {
+  .head__nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.head__logo {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 1920px) {
+  .head__logo {
+    margin: 0;
+  }
+}
+
+.head__burger {
+  width: 25px;
+  height: 25px;
+  background: url("../img/icon-mobile-menu.svg") no-repeat;
 }
 
 .head__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.head__item {
-  margin-right: 40px;
+@media (min-width: 1920px) {
+  .head__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
-.head__item:last-child {
-  margin-right: 0;
+@media (min-width: 1920px) {
+  .head__item {
+    margin: 0 40px 0 0;
+  }
+  .head__item:last-child {
+    margin: 0;
+  }
 }
 
 .head__link {
-  font-size: 27px;
-  line-height: 37px;
+  display: inline-block;
+  padding: 15px 40px 15px 0;
+  font-size: 17px;
+  line-height: 25px;
+  text-transform: uppercase;
   color: #f5d31f;
 }
 
+@media (min-width: 1920px) {
+  .head__link {
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: none;
+  }
+}
+
+.head__text {
+  margin: 10px 110px 0 0;
+}
+
+.head__text--close {
+  display: none;
+}
+
 .head__title {
-  margin: 200px 600px 0 0;
-  font-size: 75px;
-  line-height: 95px;
+  font-size: 35px;
+  line-height: 40px;
+  text-align: left;
+}
+
+.head__title br {
+  display: none;
+}
+
+@media (min-width: 1920px) {
+  .head__title {
+    margin: 200px 600px 0 0;
+    font-size: 75px;
+    line-height: 95px;
+  }
 }
 
 .head__btn {
-  display: block;
-  margin-top: 60px;
-  position: relative;
-  font-size: 25px;
-  line-height: 30px;
-  color: #ffffff;
+  display: none;
+  /*margin-top: 30px;
+	padding: 15px 0;
+	position: relative;
+	font-size: 17px;
+	line-height: 25px;
+	color: #ffffff;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 16px;
+		left: 93px;
+		width: 25px;
+		height: 25px;
+		background: url("../img/icon-arrow.png") no-repeat;
+	}*/
 }
 
-.head__btn::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 175px;
-  width: 25px;
-  height: 25px;
-  background: url("../img/icon-arrow.png") no-repeat;
+@media (min-width: 1920px) {
+  .head__btn {
+    display: block;
+    margin-top: 60px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .head__btn::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 175px;
+    width: 25px;
+    height: 25px;
+    background: url("../img/icon-arrow.png") no-repeat;
+  }
 }
 
 .services__wrap {
