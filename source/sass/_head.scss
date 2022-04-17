@@ -44,7 +44,14 @@
 .head__burger {
 	width: 25px;
 	height: 25px;
-	background: url('../img/icon-mobile-menu.svg') no-repeat;
+
+	&--close{
+		background: url('../img/icon-mobile-menu.svg') 50% 0 no-repeat;
+	}
+	
+	&--open {
+		background: url('../img/icon-close.svg') 50% 0 no-repeat;
+	}
 }
 
 .head__list {	
