@@ -55,10 +55,10 @@ body {
 	min-width: 320px;
 	margin: 0 auto;
 	color: #ffffff;
-	background: url('../img/main-bg.png') repeat-y;
+	background: url('../img/main-bg-mobile.jpg') repeat-y;
 
 	@media (min-width: $big-desktop-width) {
-		max-width: 1920px;
+		background: url('../img/main-bg-desktop.jpg') repeat-y;
 	}	
 }
 

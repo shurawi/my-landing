@@ -54,12 +54,12 @@ body {
   min-width: 320px;
   margin: 0 auto;
   color: #ffffff;
-  background: url("../img/main-bg.png") repeat-y;
+  background: url("../img/main-bg-mobile.jpg") repeat-y;
 }
 
 @media (min-width: 1920px) {
   body {
-    max-width: 1920px;
+    background: url("../img/main-bg-desktop.jpg") repeat-y;
   }
 }
 
@@ -261,33 +261,59 @@ body {
 }
 
 .services__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0 200px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-top: 55px;
+  padding: 0 5%;
 }
 
-.services__cont {
-  padding: 250px 125px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+@media (min-width: 1920px) {
+  .services__wrap {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 200px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.services__container {
+  width: 288px;
+  height: 250px;
+  margin: 0 auto;
+  padding: 100px 25px;
   border-radius: 50%;
-  border: 10px solid #f5d31f;
+  border: 5px solid #f5d31f;
+}
+
+@media (min-width: 1920px) {
+  .services__container {
+    padding: 250px 125px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 .services__title {
-  font-size: 75px;
-  line-height: 95px;
+  font-size: 35px;
+  line-height: 40px;
   text-align: center;
 }
 
+@media (min-width: 1920px) {
+  .services__title {
+    font-size: 75px;
+    line-height: 95px;
+    text-align: center;
+  }
+}
+
 .services__list {
-  width: 450px;
-  padding: 75px 0;
+  width: 95%;
+  margin: 0 auto;
+  padding: 25px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,17 +321,26 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 17px;
+  line-height: 25px;
   font-family: "CenturyGothic-Regular";
+  text-align: center;
+}
+
+@media (min-width: 1920px) {
+  .services__list {
+    width: 450px;
+    padding: 75px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .services__item {
-  width: 450px;
-  position: relative;
+  padding: 15px 0;
 }
 
 .galery {

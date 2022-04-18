@@ -4,11 +4,9 @@
 	background: url("../img/photo-bg-mobile.png") 90% 100% no-repeat, url('../img/yellow-line-bg-mobile.png') 63% 95% no-repeat;
 
 	@media (min-width: $big-desktop-width){
-		padding: 60px 85px 370px;
-		
+		padding: 60px 85px 370px;		
 		background: url('../img/yellow-line-bg.png') 0 100% no-repeat;
-	}
-	
+	}	
 }
 
 .head__nav {			
