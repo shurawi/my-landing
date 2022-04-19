@@ -1,52 +1,99 @@
 .galery {	
 	position: relative;
+	border-top: 1px solid rgba(0, 0, 0, 0);
 	
 	&::after {
 		content: "";
 		width: 100%;
-		height: 220px;
+		height: 100px;
 		position: absolute;
 		top: 0;
-		background: url('../img/yellow-line-bg.png') no-repeat;
+		background: url('../img/yellow-line-bg-mobile.png') 50% 100% no-repeat;
 		transform: rotateX(180deg);
+	}
+
+	@media (min-width: $big-desktop-width) {
+		&::after {
+			content: "";
+			width: 100%;
+			height: 220px;
+			position: absolute;
+			top: 0;
+			background: url('../img/yellow-line-bg.png') no-repeat;			
+		}
 	}
 }
 
 .galery__wrap {
-	padding: 0 85px;
-	border-top: 1px solid rgba(0, 0, 0, 0);
+	margin-top: 80px;
+	padding: 0 5%;	
+
+	@media (min-width: $big-desktop-width) {
+		margin: 0 122px 0 auto;
+		padding: 0 85px;
+	}
 }
 
 .galery__text {
-	width: 450px;	
-	margin: 0 122px 0 auto;	
-	padding: 140px 0 130px;
+	@media (min-width: $big-desktop-width) {
+		width: 450px;		
+		padding: 140px 0 130px;
+	}
 }
 
 .galery__title {	
-	font-size: 75px;
-	line-height: 95px;	
+	font-size: 35px;
+	line-height: 40px;
+
+	@media (min-width: $big-desktop-width) {
+		font-size: 75px;
+		line-height: 95px;
+	}	
 }
 
 .galery__para {
-	font-size: 30px;
-	line-height: 40px;
+	font-size: 17px;
+	line-height: 25px;
+
+	@media (min-width: $big-desktop-width) {
+		font-size: 30px;
+		line-height: 40px;
+	}	
 }
 
 .galery__container {
-	margin-bottom: 100px;
-	display: flex;
-	flex-direction: column;
+	@media (min-width: $big-desktop-width) {
+		margin-bottom: 100px;
+	}
 }
 
 .galery__list {
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+
+	@media (min-width: $big-desktop-width) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+.galery__item {
+	margin-top: 20px;
+}
+
+.galery__img {
+	max-width: 288px;
 }
 
 .garely__control {
-	margin-top: 100px;	
-	align-self: center;
+	display: none; 
+
+	@media (min-width: $big-desktop-width) {
+		margin-top: 100px;
+		align-self: center;
+	}	
 }
 
 .galery__btn {
