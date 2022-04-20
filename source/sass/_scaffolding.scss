@@ -61,10 +61,14 @@ body {
 	max-width: 1920px;
 	margin: 0 auto;
 	color: #ffffff;
-	background: url('../img/main-bg-mobile.jpg') repeat-y;
+	background: url('../img/main-bg-mobile.jpg') 50% 0 repeat-y;
+
+	@media (min-width: $tablet-width) {
+		background: url('../img/main-bg-tablet.jpg') 50% 0 repeat-y;
+	}
 
 	@media (min-width: $big-desktop-width) {
-		background: url('../img/main-bg-desktop.jpg') repeat-y;
+		background: url('../img/main-bg-desktop.jpg') 50% 0 repeat-y;
 	}	
 }
 

@@ -60,12 +60,18 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   color: #ffffff;
-  background: url("../img/main-bg-mobile.jpg") repeat-y;
+  background: url("../img/main-bg-mobile.jpg") 50% 0 repeat-y;
+}
+
+@media (min-width: 767px) {
+  body {
+    background: url("../img/main-bg-tablet.jpg") 50% 0 repeat-y;
+  }
 }
 
 @media (min-width: 1920px) {
   body {
-    background: url("../img/main-bg-desktop.jpg") repeat-y;
+    background: url("../img/main-bg-desktop.jpg") 50% 0 repeat-y;
   }
 }
 
@@ -89,6 +95,19 @@ body {
   height: 370px;
   padding: 25px 5%;
   background: url("../img/photo-bg-mobile.png") 90% 100% no-repeat, url("../img/yellow-line-bg-mobile.png") 63% 95% no-repeat;
+}
+
+.head--open {
+  height: 586px;
+  background: url("../img/photo-bg-mobile.png") 90% 100% no-repeat, url("../img/yellow-line-bg-mobile.png") 63% 97% no-repeat;
+}
+
+@media (min-width: 767px) {
+  .head {
+    height: 700px;
+    padding-top: 45px;
+    background: url("../img/photo-bg-tablet.png") 99% 44% no-repeat, url("../img/yellow-line-bg-tablet.png") 98% 82% no-repeat;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -158,6 +177,12 @@ body {
   background: url("../img/icon-close.svg") 50% 0 no-repeat;
 }
 
+@media (min-width: 767px) {
+  .head__burger {
+    display: none;
+  }
+}
+
 .head__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,6 +191,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (min-width: 767px) {
+  .head__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -187,11 +221,17 @@ body {
 
 .head__link {
   display: inline-block;
-  padding: 15px 40px 15px 0;
+  padding: 15px 40px 14px 0;
   font-size: 17px;
   line-height: 25px;
   text-transform: uppercase;
   color: #f5d31f;
+}
+
+@media (min-width: 767px) {
+  .head__link {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -203,11 +243,15 @@ body {
 }
 
 .head__text {
+  max-width: 300px;
   margin: 10px 110px 0 0;
 }
 
-.head__text--close {
-  display: none;
+@media (min-width: 767px) {
+  .head__text {
+    max-width: 370px;
+    margin-top: 25px;
+  }
 }
 
 .head__title {
@@ -220,6 +264,13 @@ body {
   display: none;
 }
 
+@media (min-width: 767px) {
+  .head__title {
+    font-size: 42px;
+    line-height: 52px;
+  }
+}
+
 @media (min-width: 1920px) {
   .head__title {
     margin: 200px 600px 0 0;
@@ -230,22 +281,6 @@ body {
 
 .head__btn {
   display: none;
-  /*margin-top: 30px;
-	padding: 15px 0;
-	position: relative;
-	font-size: 17px;
-	line-height: 25px;
-	color: #ffffff;
-
-	&::after {
-		content: "";
-		position: absolute;
-		top: 16px;
-		left: 93px;
-		width: 25px;
-		height: 25px;
-		background: url("../img/icon-arrow.png") no-repeat;
-	}*/
 }
 
 @media (min-width: 1920px) {

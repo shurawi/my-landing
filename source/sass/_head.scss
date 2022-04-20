@@ -3,6 +3,17 @@
 	padding: 25px 5%;	
 	background: url("../img/photo-bg-mobile.png") 90% 100% no-repeat, url('../img/yellow-line-bg-mobile.png') 63% 95% no-repeat;
 
+	&--open {
+		height: 586px;
+		background: url("../img/photo-bg-mobile.png") 90% 100% no-repeat,	url('../img/yellow-line-bg-mobile.png') 63% 97% no-repeat;
+	}
+
+	@media (min-width: $tablet-width) {
+		height: 700px;
+		padding-top: 45px;
+		background: url("../img/photo-bg-tablet.png") 99% 44% no-repeat,	url('../img/yellow-line-bg-tablet.png') 98% 82% no-repeat;
+	}
+
 	@media (min-width: $big-desktop-width){
 		padding: 60px 85px 370px;		
 		background: url('../img/yellow-line-bg.png') 0 100% no-repeat;
@@ -23,7 +34,7 @@
 
 	&--logo {
 		justify-content: space-between;
-	}
+	}			
 
 	@media (min-width: $big-desktop-width) {
 		justify-content: space-between;
@@ -50,11 +61,19 @@
 	&--open {
 		background: url('../img/icon-close.svg') 50% 0 no-repeat;
 	}
+
+	@media (min-width: $tablet-width) {
+		display: none;
+	}
 }
 
 .head__list {	
 	display: flex;
 	flex-direction: column;	
+
+	@media (min-width: $tablet-width) {
+		flex-direction: row;
+	}
 
 	@media (min-width: $big-desktop-width) {
 		justify-content: space-between;
@@ -74,11 +93,15 @@
 
 .head__link {
 	display: inline-block;	
-	padding: 15px 40px 15px 0;
+	padding: 15px 40px 14px 0;
 	font-size: 17px;	
 	line-height: 25px;
 	text-transform: uppercase;
 	color: #f5d31f;
+
+	@media (min-width: $tablet-width) {
+		font-size: 20px;
+	}
 
 	@media (min-width: $big-desktop-width) {
 		font-size: 27px;
@@ -88,10 +111,12 @@
 }
 
 .head__text {
+	max-width: 300px;
 	margin: 10px 110px 0 0;
 
-	&--close {
-		display: none;
+	@media (min-width: $tablet-width) {
+		max-width: 370px;
+		margin-top: 25px;
 	}
 }
 
@@ -104,6 +129,10 @@
 		display: none;
 	}
 	
+@media (min-width: $tablet-width) {
+	font-size: 42px;
+	line-height: 52px;
+}
 
 	@media (min-width: $big-desktop-width) {
 		margin: 200px 600px 0 0;
@@ -113,23 +142,7 @@
 }
 
 .head__btn {
-	display: none;
-	/*margin-top: 30px;
-	padding: 15px 0;
-	position: relative;
-	font-size: 17px;
-	line-height: 25px;
-	color: #ffffff;
-
-	&::after {
-		content: "";
-		position: absolute;
-		top: 16px;
-		left: 93px;
-		width: 25px;
-		height: 25px;
-		background: url("../img/icon-arrow.png") no-repeat;
-	}*/
+	display: none;	
 
 	@media (min-width: $big-desktop-width) {
 		display: block;
