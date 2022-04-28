@@ -16,7 +16,7 @@
 		margin-bottom: 80px;
 
 		&::after {
-			height: 125px;
+			height: 165px;
 			background: url('../img/yellow-line-bg-tablet.png') 98% 100% no-repeat;
 		}			
 	}
@@ -40,6 +40,7 @@
 	@media (min-width: $tablet-width) {
 		width: 768px;		
 		margin: 0 auto;
+		padding-top: 145px;
 	}
 
 	@media (min-width: $big-desktop-width) {

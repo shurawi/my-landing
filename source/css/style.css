@@ -106,7 +106,7 @@ body {
   .head {
     height: 700px;
     padding-top: 45px;
-    background: url("../img/photo-bg-tablet.png") 99% 44% no-repeat, url("../img/yellow-line-bg-tablet.png") 98% 82% no-repeat;
+    background: url("../img/photo-bg-tablet.png") 99% 52% no-repeat, url("../img/yellow-line-bg-tablet.png") 98% 82% no-repeat;
   }
 }
 
@@ -441,7 +441,7 @@ body {
   .galery::after {
     content: "";
     width: 100%;
-    height: 125px;
+    height: 165px;
     position: absolute;
     top: 85px;
     background: url("../img/yellow-line-bg-tablet.png") 98% 100% no-repeat;
@@ -465,7 +465,7 @@ body {
 
 @media (min-width: 767px) {
   .galery__wrap {
-    padding-top: 220px;
+    padding: 220px 5% 0;
   }
 }
 
@@ -661,7 +661,7 @@ body {
     margin-bottom: 80px;
   }
   .contacts::after {
-    height: 125px;
+    height: 165px;
     background: url("../img/yellow-line-bg-tablet.png") 98% 100% no-repeat;
   }
 }
@@ -687,6 +687,7 @@ body {
   .contacts__wrap {
     width: 768px;
     margin: 0 auto;
+    padding-top: 145px;
   }
 }
 
