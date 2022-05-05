@@ -11,31 +11,34 @@
 
 <body>
 	<header class="head head--open">
-		<nav class="head__nav head__nav--logo">
-			<a class="head__logo" href="#">
-				<picture>
-					<source srcset="img/logo-mobile-2x.png" media="(min-width: 768px)">
-					<img src="img/logo-mobile-1x.png" alt="Мой логотип">
-				</picture>
-			</a>
-			<button class="head__burger head__burger--close"></button>
-		</nav>
-		<nav class="head__nav head__nav--open ">
-			<ul class="head__list">
-				<li class="head__item">
-					<a href="" class="head__link">Услуги</a>
-				</li>
-				<li class="head__item">
-					<a href="" class="head__link">Работы</a>
-				</li>
-				<li class="head__item">
-					<a href="#" class="head__link">Заказать</a>
-				</li>
-				<li class="head__item">
-					<a href="#" class="head__link">Контакты</a>
-				</li>
-			</ul>
-		</nav>
+		<div class="head__container">
+			<nav class="head__nav head__nav--logo">
+				<a class="head__logo" href="#">
+					<picture>
+						<source srcset="img/logo-desktop-1x.png, img/logo-desktop-2x.png 2x" media="(min-width: 1440px)">
+						<source srcset="img/logo-mobile-2x.png" media="(min-width: 768px)">
+						<img src="img/logo-mobile-1x.png" alt="Мой логотип">
+					</picture>
+				</a>
+				<button class="head__burger head__burger--close"></button>
+			</nav>
+			<nav class="head__nav head__nav--open ">
+				<ul class="head__list">
+					<li class="head__item">
+						<a href="" class="head__link">Услуги</a>
+					</li>
+					<li class="head__item">
+						<a href="" class="head__link">Работы</a>
+					</li>
+					<li class="head__item">
+						<a href="#" class="head__link">Заказать</a>
+					</li>
+					<li class="head__item">
+						<a href="#" class="head__link">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 		<div class="head__text">
 			<h1 class="head__title">Пилю WEB<br> для вас<br> за ваши деньги</h1>
 			<a href="" class="head__btn">ЗАКАЗАТЬ</a>
@@ -67,7 +70,7 @@
 							<a href="#" class="galery__link">
 								<picture>
 									<source srcset="img/galery-img-1.jpg" media="(min-width: 1920px)">
-									<source srcset="img/galery-img-1-tablet-1x.jpg, img/galery-img-1-tablet-2x.jpg" ,
+									<source srcset="img/galery-img-1-tablet-1x.jpg, img/galery-img-1-tablet-2x.jpg 2x"
 										media="(min-width: 768px)">
 									<img class="galery__img" src="img/galery-img-1-mobile-1x.jpg" ,
 										srcset="img/galery-img-1-mobile-2x.jpg 2x">
@@ -78,7 +81,7 @@
 							<a href="#" class="galery__link">
 								<picture>
 									<source srcset="img/galery-img-1.jpg" media="(min-width: 1920px)">
-									<source srcset="img/galery-img-2-tablet-1x.jpg, img/galery-img-2-tablet-2x.jpg" ,
+									<source srcset="img/galery-img-2-tablet-1x.jpg, img/galery-img-2-tablet-2x.jpg 2x"
 										media="(min-width: 768px)">
 									<img class="galery__img" src="img/galery-img-2-mobile-1x.jpg" ,
 										srcset="img/galery-img-2-mobile-2x.jpg 2x">
@@ -89,7 +92,7 @@
 							<a href="#" class="galery__link">
 								<picture>
 									<source srcset="img/galery-img-1.jpg" media="(min-width: 1920px)">
-									<source srcset="img/galery-img-1-tablet-1x.jpg, img/galery-img-1-tablet-2x.jpg" ,
+									<source srcset="img/galery-img-1-tablet-1x.jpg, img/galery-img-1-tablet-2x.jpg 2x"
 										media="(min-width: 768px)">
 									<img class="galery__img" src="img/galery-img-1-mobile-1x.jpg" ,
 										srcset="img/galery-img-1-mobile-2x.jpg 2x">
@@ -100,7 +103,7 @@
 							<a href="#" class="galery__link">
 								<picture>
 									<source srcset="img/galery-img-1.jpg" media="(min-width: 1920px)">
-									<source srcset="img/galery-img-2-tablet-1x.jpg, img/galery-img-2-tablet-2x.jpg" ,
+									<source srcset="img/galery-img-2-tablet-1x.jpg, img/galery-img-2-tablet-2x.jpg 2x"
 										media="(min-width: 768px)">
 									<img class="galery__img" src="img/galery-img-2-mobile-1x.jpg" ,
 										srcset="img/galery-img-2-mobile-2x.jpg 2x">
@@ -121,7 +124,7 @@
 							<a href="#" class="galery__link">
 								<picture>
 									<source srcset="img/galery-img-1.jpg" media="(min-width: 1920px)">
-									<source srcset="img/galery-img-2-tablet-1x.jpg, img/galery-img-2-tablet-2x.jpg" ,
+									<source srcset="img/galery-img-2-tablet-1x.jpg, img/galery-img-2-tablet-2x.jpg 2x"
 										media="(min-width: 768px)">
 									<img class="galery__img" src="img/galery-img-2-mobile-1x.jpg" ,
 										srcset="img/galery-img-2-mobile-2x.jpg 2x">
@@ -132,7 +135,7 @@
 							<a href="#" class="galery__link">
 								<picture>
 									<source srcset="img/galery-img-1.jpg" media="(min-width: 1920px)">
-									<source srcset="img/galery-img-1-tablet-1x.jpg, img/galery-img-1-tablet-2x.jpg" ,
+									<source srcset="img/galery-img-1-tablet-1x.jpg, img/galery-img-1-tablet-2x.jpg 2x"
 										media="(min-width: 768px)">
 									<img class="galery__img" src="img/galery-img-1-mobile-1x.jpg" ,
 										srcset="img/galery-img-1-mobile-2x.jpg 2x">
@@ -143,7 +146,7 @@
 							<a href="#" class="galery__link">
 								<picture>
 									<source srcset="img/galery-img-1.jpg" media="(min-width: 1920px)">
-									<source srcset="img/galery-img-2-tablet-1x.jpg, img/galery-img-2-tablet-2x.jpg" ,
+									<source srcset="img/galery-img-2-tablet-1x.jpg, img/galery-img-2-tablet-2x.jpg 2x"
 										media="(min-width: 768px)">
 									<img class="galery__img" src="img/galery-img-2-mobile-1x.jpg" ,
 										srcset="img/galery-img-2-mobile-2x.jpg 2x">
@@ -154,7 +157,7 @@
 							<a href="#" class="galery__link">
 								<picture>
 									<source srcset="img/galery-img-1.jpg" media="(min-width: 1920px)">
-									<source srcset="img/galery-img-1-tablet-1x.jpg, img/galery-img-1-tablet-2x.jpg" ,
+									<source srcset="img/galery-img-1-tablet-1x.jpg, img/galery-img-1-tablet-2x.jpg 2x"
 										media="(min-width: 768px)">
 									<img class="galery__img" src="img/galery-img-1-mobile-1x.jpg" ,
 										srcset="img/galery-img-1-mobile-2x.jpg 2x">

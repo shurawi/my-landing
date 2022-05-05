@@ -22,7 +22,7 @@
 			background: url('../img/yellow-line-bg-tablet.png') 98% 100% no-repeat;
 			transform: rotateX(180deg);
 		}
-	}
+	}	
 
 	@media (min-width: $big-desktop-width) {
 		&::after {
@@ -105,6 +105,10 @@
 		justify-content: space-around;
 	}
 
+	@media (min-width: 1066px) {
+		justify-content: center;
+	}
+
 	@media (min-width: $big-desktop-width) {
 		display: flex;
 		flex-direction: row;
@@ -117,6 +121,14 @@
 
 	@media (min-width: $tablet-width) {
 		margin: 0 0 40px;
+	}
+
+	@media (min-width: 1066px) {
+		margin-bottom: 7.5%;
+
+		&:nth-child(odd) {
+			margin-right: 15%;
+		}
 	}
 }
 

@@ -14,9 +14,23 @@
 		background: url("../img/photo-bg-tablet.png") 99% 52% no-repeat,	url('../img/yellow-line-bg-tablet.png') 98% 82% no-repeat;
 	}
 
+	@media (min-width: $small-desktop-width) {
+		height: 1300px;
+		padding-top: 45px;
+		background: url('../img/yellow-line-bg-desktop.png') 62% 74% no-repeat, url("../img/photo-bg-desktop.png") 85% 50% no-repeat;
+	}
+
 	@media (min-width: $big-desktop-width){
 		padding: 60px 85px 370px;		
 		background: url('../img/yellow-line-bg.png') 0 100% no-repeat;
+	}	
+}
+
+.head__container {
+	@media (min-width: $small-desktop-width) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}	
 }
 
@@ -43,9 +57,10 @@
 }
 
 .head__logo {
-	margin-bottom: 25px;	
+	margin-bottom: 25px;		
 
-	@media (min-width: $big-desktop-width) {
+	@media (min-width: $small-desktop-width) {
+		width: 400px;
 		margin: 0;
 	}
 }
@@ -82,8 +97,8 @@
 }
 
 .head__item {
-	@media (min-width: $big-desktop-width) {		
-		margin: 0 40px 0 0;
+	@media (min-width: $small-desktop-width) {		
+		margin: 0 55px 0 0;
 		
 		&:last-child {
 			margin: 0;
@@ -103,6 +118,10 @@
 		font-size: 20px;
 	}
 
+	@media (min-width: $small-desktop-width) {
+		padding: 0;		
+	}
+
 	@media (min-width: $big-desktop-width) {
 		font-size: 27px;
 		line-height: 37px;
@@ -117,6 +136,11 @@
 	@media (min-width: $tablet-width) {
 		max-width: 370px;
 		margin-top: 25px;
+	}
+
+	@media (min-width: $small-desktop-width) {		
+		max-width: 450px;
+		margin: 110px 0 0 10%;
 	}
 }
 
@@ -134,8 +158,12 @@
 	line-height: 52px;
 }
 
-	@media (min-width: $big-desktop-width) {
-		margin: 200px 600px 0 0;
+@media (min-width: $small-desktop-width) {
+	font-size: 72px;
+	line-height: 95px;
+}
+
+	@media (min-width: $big-desktop-width) {		
 		font-size: 75px;
 		line-height: 95px;
 	}	

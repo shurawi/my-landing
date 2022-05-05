@@ -67,7 +67,7 @@ body {
 		background: url('../img/main-bg-tablet.jpg') 50% 0 repeat-y;
 	}
 
-	@media (min-width: $big-desktop-width) {
+	@media (min-width: $small-desktop-width) {
 		background: url('../img/main-bg-desktop.jpg') 50% 0 repeat-y;
 	}	
 }
