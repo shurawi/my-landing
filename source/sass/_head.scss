@@ -15,9 +15,9 @@
 	}
 
 	@media (min-width: $small-desktop-width) {
-		height: 1300px;
+		height: 1100px;
 		padding-top: 45px;
-		background: url('../img/yellow-line-bg-desktop.png') 62% 74% no-repeat, url("../img/photo-bg-desktop.png") 85% 50% no-repeat;
+		background: url('../img/yellow-line-bg-desktop.png') 62% 90% no-repeat, url("../img/photo-bg-desktop.png") 85% 95% no-repeat;
 	}
 
 	@media (min-width: $big-desktop-width){
@@ -140,7 +140,7 @@
 
 	@media (min-width: $small-desktop-width) {		
 		max-width: 450px;
-		margin: 110px 0 0 10%;
+		margin: 80px 0 0 10%;
 	}
 }
 

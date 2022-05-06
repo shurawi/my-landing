@@ -112,9 +112,9 @@ body {
 
 @media (min-width: 1440px) {
   .head {
-    height: 1300px;
+    height: 1100px;
     padding-top: 45px;
-    background: url("../img/yellow-line-bg-desktop.png") 62% 74% no-repeat, url("../img/photo-bg-desktop.png") 85% 50% no-repeat;
+    background: url("../img/yellow-line-bg-desktop.png") 62% 90% no-repeat, url("../img/photo-bg-desktop.png") 85% 95% no-repeat;
   }
 }
 
@@ -286,7 +286,7 @@ body {
 @media (min-width: 1440px) {
   .head__text {
     max-width: 450px;
-    margin: 110px 0 0 10%;
+    margin: 80px 0 0 10%;
   }
 }
 
@@ -362,6 +362,13 @@ body {
   }
 }
 
+@media (min-width: 1440px) {
+  .services__wrap {
+    min-width: 1300px;
+    padding: 0 5%;
+  }
+}
+
 @media (min-width: 1920px) {
   .services__wrap {
     margin: 0;
@@ -387,6 +394,14 @@ body {
   }
 }
 
+@media (min-width: 1440px) {
+  .services__container {
+    width: 500px;
+    height: 500px;
+    padding: 189px 25px;
+  }
+}
+
 @media (min-width: 1920px) {
   .services__container {
     padding: 250px 125px;
@@ -406,6 +421,13 @@ body {
   .services__title {
     font-size: 42px;
     line-height: 52px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .services__title {
+    font-size: 72px;
+    line-height: 95px;
   }
 }
 
@@ -447,6 +469,14 @@ body {
   }
 }
 
+@media (min-width: 1440px) {
+  .services__list {
+    width: 450px;
+    font-size: 25px;
+    line-height: 28px;
+  }
+}
+
 @media (min-width: 1920px) {
   .services__list {
     width: 450px;
@@ -461,6 +491,12 @@ body {
 
 .services__item {
   padding: 15px 0;
+}
+
+@media (min-width: 1440px) {
+  .services__item {
+    padding: 25px 25px 0 25px;
+  }
 }
 
 .galery {
