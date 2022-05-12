@@ -361,16 +361,6 @@ body {
   }
 }
 
-@media (min-width: 1920px) {
-  .services__wrap {
-    margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0 200px;
-  }
-}
-
 .services__container {
   width: 288px;
   height: 288px;
@@ -396,7 +386,9 @@ body {
 
 @media (min-width: 1920px) {
   .services__container {
-    padding: 250px 125px;
+    width: 600px;
+    height: 600px;
+    padding: 190px 125px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -425,7 +417,7 @@ body {
 
 @media (min-width: 1920px) {
   .services__title {
-    font-size: 75px;
+    font-size: 90px;
     line-height: 95px;
     text-align: center;
   }
@@ -487,7 +479,7 @@ body {
 
 @media (min-width: 1440px) {
   .services__item {
-    padding: 25px 25px 0 25px;
+    padding: 50px 25px 0;
   }
 }
 

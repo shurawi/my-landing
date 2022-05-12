@@ -18,12 +18,6 @@
 		min-width: 1300px;
 		padding: 0 5%;
 	}
-
-	@media (min-width: $large-desktop-width) {
-		margin: 0;
-		display: flex;
-		padding: 0 200px;		
-	}	
 }
 
 .services__container {	
@@ -45,7 +39,9 @@
 	}
 
 	@media (min-width: $large-desktop-width) {
-		padding: 250px 125px;
+		width: 600px;
+		height: 600px;
+		padding: 190px 125px;
 		align-self: center;
 	}
 }
@@ -66,7 +62,7 @@
 	}
 
 	@media (min-width: $large-desktop-width) {
-		font-size: 75px;
+		font-size: 90px;
 		line-height: 95px;
 		text-align: center;
 	}	
@@ -111,6 +107,6 @@
 	padding: 15px 0;
 
 	@media (min-width: $small-desktop-width) {
-		padding: 25px 25px 0 25px;
+		padding: 50px 25px 0;
 	}
 }
