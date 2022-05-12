@@ -18,12 +18,13 @@
 		height: 1100px;
 		padding-top: 45px;
 		background: url('../img/yellow-line-bg-desktop.png') 62% 90% no-repeat, url("../img/photo-bg-desktop.png") 85% 95% no-repeat;
-	}
-
-	@media (min-width: $big-desktop-width){
-		padding: 60px 85px 370px;		
-		background: url('../img/yellow-line-bg.png') 0 100% no-repeat;
 	}	
+
+	@media (min-width: $large-desktop-width) {
+		height: 1500px;
+		padding-top: 45px;
+		background: url('../img/yellow-line-bg-desktop.png') 62% 90% no-repeat,	url("../img/photo-bg-large-desktop.png") 85% 100% no-repeat;
+	}
 }
 
 .head__container {
@@ -50,7 +51,7 @@
 		justify-content: space-between;
 	}			
 
-	@media (min-width: $big-desktop-width) {
+	@media (min-width: $large-desktop-width) {
 		justify-content: space-between;
 		align-items: center;
 	}	
@@ -90,7 +91,7 @@
 		flex-direction: row;
 	}
 
-	@media (min-width: $big-desktop-width) {
+	@media (min-width: $large-desktop-width) {
 		justify-content: space-between;
 	}
 	
@@ -122,7 +123,7 @@
 		padding: 0;		
 	}
 
-	@media (min-width: $big-desktop-width) {
+	@media (min-width: $large-desktop-width) {
 		font-size: 27px;
 		line-height: 37px;
 		text-transform: none;
@@ -141,6 +142,11 @@
 	@media (min-width: $small-desktop-width) {		
 		max-width: 450px;
 		margin: 80px 0 0 10%;
+	}
+
+	@media (min-width: $large-desktop-width) {
+		max-width: 640px;
+		margin: 150px 0 0 10%;
 	}
 }
 
@@ -163,29 +169,8 @@
 	line-height: 95px;
 }
 
-	@media (min-width: $big-desktop-width) {		
-		font-size: 75px;
-		line-height: 95px;
-	}	
-}
-
-.head__btn {
-	display: none;	
-
-	@media (min-width: $big-desktop-width) {
-		display: block;
-		margin-top: 60px;
-		font-size: 25px;
-		line-height: 30px;
-
-		&::after {
-			content: "";
-			position: absolute;
-			top: 5px;
-			left: 175px;
-			width: 25px;
-			height: 25px;
-			background: url("../img/icon-arrow.png") no-repeat;
-		}
+	@media (min-width: $large-desktop-width) {
+		font-size: 100px;
+		line-height: 150px;
 	}
 }

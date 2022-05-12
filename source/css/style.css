@@ -120,8 +120,9 @@ body {
 
 @media (min-width: 1920px) {
   .head {
-    padding: 60px 85px 370px;
-    background: url("../img/yellow-line-bg.png") 0 100% no-repeat;
+    height: 1500px;
+    padding-top: 45px;
+    background: url("../img/yellow-line-bg-desktop.png") 62% 90% no-repeat, url("../img/photo-bg-large-desktop.png") 85% 100% no-repeat;
   }
 }
 
@@ -290,6 +291,13 @@ body {
   }
 }
 
+@media (min-width: 1920px) {
+  .head__text {
+    max-width: 640px;
+    margin: 150px 0 0 10%;
+  }
+}
+
 .head__title {
   font-size: 35px;
   line-height: 40px;
@@ -316,30 +324,8 @@ body {
 
 @media (min-width: 1920px) {
   .head__title {
-    font-size: 75px;
-    line-height: 95px;
-  }
-}
-
-.head__btn {
-  display: none;
-}
-
-@media (min-width: 1920px) {
-  .head__btn {
-    display: block;
-    margin-top: 60px;
-    font-size: 25px;
-    line-height: 30px;
-  }
-  .head__btn::after {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 175px;
-    width: 25px;
-    height: 25px;
-    background: url("../img/icon-arrow.png") no-repeat;
+    font-size: 100px;
+    line-height: 150px;
   }
 }
 
@@ -350,7 +336,7 @@ body {
 
 @media (min-width: 767px) {
   .services__wrap {
-    width: 690px;
+    width: 90%;
     margin: 0 auto;
     padding: 0;
     display: -webkit-box;
@@ -359,6 +345,12 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media (min-width: 1066px) {
+  .services__wrap {
+    width: 77%;
   }
 }
 
