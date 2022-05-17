@@ -38,9 +38,7 @@
 
 	@media (min-width: $large-desktop-width) {
 		&::after {
-			content: "";			
-			height: 220px;			
-			background: url('../img/yellow-line-bg.png') no-repeat;			
+			top: 105px
 		}
 	}
 }
@@ -54,7 +52,7 @@
 	}
 
 	@media (min-width: $large-desktop-width) {
-		margin: 0 122px 0 auto;
+		margin: 0 auto;
 		padding: 0 85px;
 	}
 }
@@ -69,7 +67,8 @@
 
 	@media (min-width: $large-desktop-width) {
 		width: 450px;		
-		padding: 140px 0 130px;
+		margin-bottom: 100px;
+		padding: 400px 0 0;
 	}
 }
 
@@ -86,6 +85,10 @@
 		font-size: 75px;
 		line-height: 95px;
 	}	
+
+	@media (min-width: $large-desktop-width) {
+		font-size: 95px;
+	}
 }
 
 .galery__para {
@@ -118,10 +121,6 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-around;
-	}
-
-	@media (min-width: $tablet-width) {
-		
 	}	
 
 	@media (min-width: $small-desktop-width) {
@@ -145,10 +144,14 @@
 	@media (min-width: $small-desktop-width) {
 		margin-bottom: 60px;	
 	}
+
+	@media (min-width: $large-desktop-width) {
+		margin: 0;
+	}
 }
 
 .galery__img {
-	max-width: 288px;
+	max-width: 288px;	
 
 	@media (min-width: $tablet-width) {
 		min-width: 320px;
@@ -160,6 +163,10 @@
 
 	@media (min-width: $small-desktop-width) {
 		min-width: 600px;
+	}
+
+	@media (min-width: $large-desktop-width) {
+		min-width: 420px;
 	}
 }
 

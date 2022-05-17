@@ -527,9 +527,7 @@ body {
 
 @media (min-width: 1920px) {
   .galery::after {
-    content: "";
-    height: 220px;
-    background: url("../img/yellow-line-bg.png") no-repeat;
+    top: 105px;
   }
 }
 
@@ -546,7 +544,7 @@ body {
 
 @media (min-width: 1920px) {
   .galery__wrap {
-    margin: 0 122px 0 auto;
+    margin: 0 auto;
     padding: 0 85px;
   }
 }
@@ -565,7 +563,8 @@ body {
 @media (min-width: 1920px) {
   .galery__text {
     width: 450px;
-    padding: 140px 0 130px;
+    margin-bottom: 100px;
+    padding: 400px 0 0;
   }
 }
 
@@ -585,6 +584,12 @@ body {
   .galery__title {
     font-size: 75px;
     line-height: 95px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .galery__title {
+    font-size: 95px;
   }
 }
 
@@ -678,6 +683,12 @@ body {
   }
 }
 
+@media (min-width: 1920px) {
+  .galery__item {
+    margin: 0;
+  }
+}
+
 .galery__img {
   max-width: 288px;
 }
@@ -697,6 +708,12 @@ body {
 @media (min-width: 1440px) {
   .galery__img {
     min-width: 600px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .galery__img {
+    min-width: 420px;
   }
 }
 
