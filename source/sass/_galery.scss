@@ -106,8 +106,12 @@
 }
 
 .galery__container {	
-	@media (min-width: $large-desktop-width) {
+	@media (min-width: $large-desktop-width) {		
 		margin-bottom: 100px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
 	}
 }
 
