@@ -94,19 +94,31 @@ body {
 .head {
   height: 370px;
   padding: 25px 5%;
-  background: url("../img/photo-bg-mobile.png") 90% 100% no-repeat, url("../img/yellow-line-bg-mobile.png") 63% 95% no-repeat;
+  background: url("../img/yellow-line-bg-mobile.png") 63% 92% no-repeat, url("../img/photo-bg-470.png") 90% 100% no-repeat;
+}
+
+@media (min-width: 540px) {
+  .head {
+    background: url("../img/yellow-line-bg-mobile.png") 63% 90% no-repeat, url("../img/photo-bg-470.png") 87% 100% no-repeat;
+  }
 }
 
 .head--open {
   height: 586px;
-  background: url("../img/photo-bg-mobile.png") 90% 100% no-repeat, url("../img/yellow-line-bg-mobile.png") 63% 97% no-repeat;
+  background: url("../img/yellow-line-bg-mobile.png") 63% 99% no-repeat, url("../img/photo-bg-470.png") 90% 105% no-repeat;
+}
+
+@media (min-width: 540px) {
+  .head--open {
+    background: url("../img/yellow-line-bg-mobile.png") 63% 99% no-repeat, url("../img/photo-bg-470.png") 87% 105% no-repeat;
+  }
 }
 
 @media (min-width: 767px) {
   .head {
     height: 700px;
     padding-top: 45px;
-    background: url("../img/photo-bg-tablet.png") 99% 52% no-repeat, url("../img/yellow-line-bg-tablet.png") 98% 82% no-repeat;
+    background: url("../img/yellow-line-bg-tablet.png") 63% 82% no-repeat, url("../img/photo-bg-tablet.png") 99% 63% no-repeat;
   }
 }
 
@@ -823,14 +835,14 @@ body {
 }
 
 .contacts__wrap {
-  padding: 65px 5% 0;
+  padding: 100px 5% 0;
 }
 
 @media (min-width: 767px) {
   .contacts__wrap {
     width: 768px;
     margin: 0 auto;
-    padding-top: 145px;
+    padding-top: 170px;
   }
 }
 
